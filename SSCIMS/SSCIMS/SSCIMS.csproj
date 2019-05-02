@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A339841-91DA-48A6-92CC-8865E5195CDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSCIMS</RootNamespace>
+    <AssemblyName>SSCIMS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FormLayout, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SubUI\FormChooseProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormChooseProcess.Designer.cs">
+      <DependentUpon>FormChooseProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHomeTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHomeTreeView.Designer.cs">
+      <DependentUpon>FormHomeTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationDatabaseClass.cs" />
+    <Compile Include="SubUI\FormCourseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormCourseQuery.Designer.cs">
+      <DependentUpon>FormCourseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormChooseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormChooseQuery.Designer.cs">
+      <DependentUpon>FormChooseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormCourseProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormCourseProcess.Designer.cs">
+      <DependentUpon>FormCourseProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormDataMining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormDataMining.Designer.cs">
+      <DependentUpon>FormDataMining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormStudentProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormStudentProcess.Designer.cs">
+      <DependentUpon>FormStudentProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormStudentQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormStudentQuery.Designer.cs">
+      <DependentUpon>FormStudentQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormStudentUserProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormStudentUserProcess.Designer.cs">
+      <DependentUpon>FormStudentUserProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormStudentUserQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormStudentUserQuery.Designer.cs">
+      <DependentUpon>FormStudentUserQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormTurnData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormTurnData.Designer.cs">
+      <DependentUpon>FormTurnData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubUI\FormUpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubUI\FormUpdatePassword.Designer.cs">
+      <DependentUpon>FormUpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SubUI\FormChooseProcess.resx">
+      <DependentUpon>FormChooseProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHomeTreeView.resx">
+      <DependentUpon>FormHomeTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormCourseQuery.resx">
+      <DependentUpon>FormCourseQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormChooseQuery.resx">
+      <DependentUpon>FormChooseQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormCourseProcess.resx">
+      <DependentUpon>FormCourseProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormDataMining.resx">
+      <DependentUpon>FormDataMining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormStudentProcess.resx">
+      <DependentUpon>FormStudentProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormStudentQuery.resx">
+      <DependentUpon>FormStudentQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormStudentUserProcess.resx">
+      <DependentUpon>FormStudentUserProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormStudentUserQuery.resx">
+      <DependentUpon>FormStudentUserQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormTurnData.resx">
+      <DependentUpon>FormTurnData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubUI\FormUpdatePassword.resx">
+      <DependentUpon>FormUpdatePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
